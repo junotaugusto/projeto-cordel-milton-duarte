@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Passion+One&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /*Fonte padrão para links*/
+    --fonte2: 'Passion One', cursive; /*Títulos*/
+    --fonte3: 'Lavishly Yours', cursive; /*Conteúdo das seções*/
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#imagem1 {
+    background-image: url('imagens/background001.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+#imagem2 {
+    background-image: url('imagens/background002.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+html, body {
+    min-height: 100vh; /*Tamanho mínimo da página vai ser 100% da viewport height*/
+    background-color: darkgrey;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-image: linear-gradient(to right, black, white);
+    color: white;
+    text-align: center;
+    text-shadow: 4px 3px 10px rgba(0, 0, 0, 0.536);
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 7vw; /*O tamanho da letra é aplicado conforme o a largura da tela*/
+}
+
+header > p {
+    padding-bottom: 50px;
+    margin-top: 5px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: 1s;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 25px;
+    font-family: var(--fonte3);
+    font-size: 4vw; /*O tamanho da letra é aplicado conforme o a largura da tela*/
+}
+
+section.normal {
+    background-color: rgb(255, 250, 201);
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(255, 211, 128);
+    color: white;
+    text-shadow: 3px 1px 6px rgb(0 0 0 / 66%) ;
+    box-shadow: inset 6px 6px 13px 0px rgb(99, 99, 99);
+}
+
+section.imagem > p {
+    display: inline-block; /*Transforma na caixa que se adapta ao conteúdo*/
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.253);
+    text-shadow: 3px 1px 6px rgba(0, 0, 0, 0.663);
+}
+
+section > p{
+
+    padding-bottom: 1.5em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
